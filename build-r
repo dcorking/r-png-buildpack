@@ -55,6 +55,8 @@ echo CPPFLAGS: $CPPFLAGS
 cd $basedir/R-$rversion/
 
 # ./configure --prefix=$prefix --without-x && make && make install
+# ./configure --prefix=$prefix --without-x --with-cairo --with-libpng --enable-R-shlib && make && make install
+
 ./configure --prefix=$prefix --without-x --with-cairo --with-libpng --enable-R-shlib && make && make install
 
 # remove unneeded files to make the output smaller
